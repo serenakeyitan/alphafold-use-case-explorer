@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interactive web explainer showcasing real-world AlphaFold applications in digital biology">
+    <title>AlphaFold Use Case Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="nav-logo">AlphaFold Explorer</h1>
+            <ul class="nav-menu">
+                <li><a href="#hero" class="nav-link">Home</a></li>
+                <li><a href="#timeline" class="nav-link">Timeline</a></li>
+                <li><a href="#use-cases" class="nav-link">Use Cases</a></li>
+                <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+            </ul>
+            <button id="dark-mode-toggle" class="dark-mode-toggle" aria-label="Toggle dark mode">
+                <span class="icon-sun">☀️</span>
+                <span class="icon-moon">🌙</span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="container">
+                <h1 class="hero-title fade-in">AlphaFold: Revolutionizing Digital Biology</h1>
+                <p class="hero-subtitle fade-in">Explore real-world applications of AI-powered protein structure prediction</p>
+                <p class="hero-description fade-in">
+                    AlphaFold, developed by DeepMind, has solved one of biology's grand challenges: predicting 3D protein structures from amino acid sequences.
+                    This breakthrough is accelerating scientific discovery across drug development, disease research, and beyond.
+                </p>
+                <a href="#use-cases" class="cta-button fade-in">Explore Use Cases</a>
+            </div>
+        </section>
+
+        <section id="timeline" class="timeline-section">
+            <div class="container">
+                <h2 class="section-title">AlphaFold Timeline</h2>
+                <p class="section-subtitle">Key breakthroughs in protein structure prediction</p>
+
+                <div class="timeline">
+                    <div class="timeline-item fade-in-up">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-year">2018</h3>
+                            <h4 class="timeline-title">AlphaFold 1</h4>
+                            <p class="timeline-description">DeepMind wins CASP13 competition, demonstrating that deep learning can predict protein structures with unprecedented accuracy.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item fade-in-up">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-year">2020</h3>
+                            <h4 class="timeline-title">AlphaFold 2</h4>
+                            <p class="timeline-description">Revolutionary breakthrough at CASP14 with atomic-level accuracy. Described as solving the protein folding problem that has puzzled scientists for 50 years.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item fade-in-up">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-year">2021</h3>
+                            <h4 class="timeline-title">AlphaFold Database Launch</h4>
+                            <p class="timeline-description">DeepMind and EMBL-EBI release predictions for nearly all catalogued proteins, making structures freely accessible to researchers worldwide.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item fade-in-up">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-year">2024</h3>
+                            <h4 class="timeline-title">AlphaFold 3</h4>
+                            <p class="timeline-description">Expanded to predict structures of proteins interacting with DNA, RNA, and small molecules, opening new frontiers in drug discovery and molecular biology.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="use-cases" class="use-cases-section">
+            <div class="container">
+                <h2 class="section-title">Real-World Applications</h2>
+                <p class="section-subtitle">Discover how AlphaFold is transforming science and medicine</p>
+
+                <div class="use-cases-grid">
+                    <div class="use-case-card fade-in-up" data-use-case="drug-discovery">
+                        <div class="card-icon">💊</div>
+                        <h3 class="card-title">Drug Discovery</h3>
+                        <p class="card-preview">Accelerating the development of life-saving medicines</p>
+                        <button class="expand-button" aria-label="Expand card">
+                            <span class="expand-icon">+</span>
+                        </button>
+                        <div class="card-expanded-content">
+                            <h4>Transforming Pharmaceutical Development</h4>
+                            <p>AlphaFold is revolutionizing drug discovery by providing accurate protein structures that were previously unavailable or required years of experimental work.</p>
+                            <div class="examples">
+                                <h5>Key Applications:</h5>
+                                <ul>
+                                    <li><strong>Target Identification:</strong> Rapidly identify and validate drug targets for diseases</li>
+                                    <li><strong>Structure-Based Design:</strong> Design molecules that precisely bind to target proteins</li>
+                                    <li><strong>Repurposing:</strong> Discover new uses for existing drugs by understanding protein interactions</li>
+                                    <li><strong>Antibody Development:</strong> Accelerate therapeutic antibody design</li>
+                                </ul>
+                            </div>
+                            <div class="metrics">
+                                <div class="metric">
+                                    <span class="metric-value">10x</span>
+                                    <span class="metric-label">Faster Structure Determination</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">$2.6B</span>
+                                    <span class="metric-label">Average Cost Saved per Drug</span>
+                                </div>
+                            </div>
+                            <div class="real-world-example">
+                                <h5>Real-World Impact:</h5>
+                                <p>Pharmaceutical companies are using AlphaFold to accelerate COVID-19 treatment development, design cancer therapeutics, and develop treatments for rare diseases.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="use-case-card fade-in-up" data-use-case="protein-engineering">
+                        <div class="card-icon">🧬</div>
+                        <h3 class="card-title">Protein Engineering</h3>
+                        <p class="card-preview">Designing novel proteins for biotechnology</p>
+                        <button class="expand-button" aria-label="Expand card">
+                            <span class="expand-icon">+</span>
+                        </button>
+                        <div class="card-expanded-content">
+                            <h4>Engineering Biology's Building Blocks</h4>
+                            <p>Understanding protein structure enables scientists to engineer proteins with enhanced or entirely new functions.</p>
+                            <div class="examples">
+                                <h5>Key Applications:</h5>
+                                <ul>
+                                    <li><strong>Enzyme Optimization:</strong> Create more efficient industrial enzymes for manufacturing</li>
+                                    <li><strong>Biosensors:</strong> Design proteins that detect specific molecules or conditions</li>
+                                    <li><strong>Biomaterials:</strong> Develop novel materials with unique properties</li>
+                                    <li><strong>Synthetic Biology:</strong> Build biological circuits and systems</li>
+                                </ul>
+                            </div>
+                            <div class="metrics">
+                                <div class="metric">
+                                    <span class="metric-value">100x</span>
+                                    <span class="metric-label">Improvement in Design Speed</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">90%</span>
+                                    <span class="metric-label">Reduction in Lab Testing</span>
+                                </div>
+                            </div>
+                            <div class="real-world-example">
+                                <h5>Real-World Impact:</h5>
+                                <p>Researchers are engineering plastic-degrading enzymes, developing sustainable biofuels, and creating proteins that capture carbon dioxide from the atmosphere.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="use-case-card fade-in-up" data-use-case="disease-research">
+                        <div class="card-icon">🔬</div>
+                        <h3 class="card-title">Disease Research</h3>
+                        <p class="card-preview">Understanding and treating genetic diseases</p>
+                        <button class="expand-button" aria-label="Expand card">
+                            <span class="expand-icon">+</span>
+                        </button>
+                        <div class="card-expanded-content">
+                            <h4>Unlocking Disease Mechanisms</h4>
+                            <p>AlphaFold helps researchers understand how genetic mutations cause disease at the molecular level.</p>
+                            <div class="examples">
+                                <h5>Key Applications:</h5>
+                                <ul>
+                                    <li><strong>Genetic Disorders:</strong> Map how mutations affect protein function in diseases like cystic fibrosis</li>
+                                    <li><strong>Cancer Research:</strong> Understand oncogenic mutations and develop targeted therapies</li>
+                                    <li><strong>Neurodegenerative Diseases:</strong> Study protein misfolding in Alzheimer's and Parkinson's</li>
+                                    <li><strong>Infectious Diseases:</strong> Analyze pathogen proteins to develop vaccines and treatments</li>
+                                </ul>
+                            </div>
+                            <div class="metrics">
+                                <div class="metric">
+                                    <span class="metric-value">7,000+</span>
+                                    <span class="metric-label">Rare Diseases Impacted</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">200M+</span>
+                                    <span class="metric-label">Protein Structures Available</span>
+                                </div>
+                            </div>
+                            <div class="real-world-example">
+                                <h5>Real-World Impact:</h5>
+                                <p>Scientists used AlphaFold to understand the structure of proteins involved in neglected tropical diseases, leading to potential new treatments for millions of patients.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="use-case-card fade-in-up" data-use-case="agriculture">
+                        <div class="card-icon">🌾</div>
+                        <h3 class="card-title">Agriculture</h3>
+                        <p class="card-preview">Engineering resilient and nutritious crops</p>
+                        <button class="expand-button" aria-label="Expand card">
+                            <span class="expand-icon">+</span>
+                        </button>
+                        <div class="card-expanded-content">
+                            <h4>Feeding the Future</h4>
+                            <p>AlphaFold enables the design of crops that are more resilient, nutritious, and sustainable.</p>
+                            <div class="examples">
+                                <h5>Key Applications:</h5>
+                                <ul>
+                                    <li><strong>Crop Improvement:</strong> Engineer plants with enhanced yield and nutritional content</li>
+                                    <li><strong>Disease Resistance:</strong> Develop crops resistant to pathogens and pests</li>
+                                    <li><strong>Climate Adaptation:</strong> Create varieties that thrive in changing conditions</li>
+                                    <li><strong>Nitrogen Fixation:</strong> Engineer plants to reduce fertilizer dependency</li>
+                                </ul>
+                            </div>
+                            <div class="metrics">
+                                <div class="metric">
+                                    <span class="metric-value">30%</span>
+                                    <span class="metric-label">Potential Yield Increase</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">50%</span>
+                                    <span class="metric-label">Reduction in Development Time</span>
+                                </div>
+                            </div>
+                            <div class="real-world-example">
+                                <h5>Real-World Impact:</h5>
+                                <p>Agricultural biotech companies are using AlphaFold to develop drought-resistant crops and enhance nutritional profiles to address global food security challenges.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="use-case-card fade-in-up" data-use-case="environmental">
+                        <div class="card-icon">🌍</div>
+                        <h3 class="card-title">Environmental Science</h3>
+                        <p class="card-preview">Tackling pollution and climate change</p>
+                        <button class="expand-button" aria-label="Expand card">
+                            <span class="expand-icon">+</span>
+                        </button>
+                        <div class="card-expanded-content">
+                            <h4>Protecting Our Planet</h4>
+                            <p>Protein engineering powered by AlphaFold is creating solutions for environmental challenges.</p>
+                            <div class="examples">
+                                <h5>Key Applications:</h5>
+                                <ul>
+                                    <li><strong>Plastic Degradation:</strong> Engineer enzymes that break down persistent plastics</li>
+                                    <li><strong>Carbon Capture:</strong> Develop proteins that efficiently capture CO2</li>
+                                    <li><strong>Bioremediation:</strong> Create organisms that clean up pollutants and toxins</li>
+                                    <li><strong>Sustainable Materials:</strong> Design bio-based alternatives to synthetic materials</li>
+                                </ul>
+                            </div>
+                            <div class="metrics">
+                                <div class="metric">
+                                    <span class="metric-value">1000x</span>
+                                    <span class="metric-label">Faster Plastic Breakdown</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">70%</span>
+                                    <span class="metric-label">Reduction in Chemical Waste</span>
+                                </div>
+                            </div>
+                            <div class="real-world-example">
+                                <h5>Real-World Impact:</h5>
+                                <p>Researchers have engineered enzymes that can degrade PET plastics in hours instead of centuries, and developed microorganisms that convert CO2 into useful chemicals.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-works" class="how-it-works-section">
+            <div class="container">
+                <h2 class="section-title">How AlphaFold Works</h2>
+                <p class="section-subtitle">A simplified explanation of the technology</p>
+
+                <div class="how-it-works-content">
+                    <div class="step fade-in-up">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Input: Amino Acid Sequence</h3>
+                            <p>AlphaFold starts with a protein's amino acid sequence - a string of building blocks that make up the protein. This sequence contains all the information needed to determine the protein's 3D structure.</p>
+                        </div>
+                    </div>
+
+                    <div class="step fade-in-up">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Multiple Sequence Alignment</h3>
+                            <p>The system searches databases for similar protein sequences across different organisms. Evolution provides clues - parts of the protein that haven't changed are likely important for structure and function.</p>
+                        </div>
+                    </div>
+
+                    <div class="step fade-in-up">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Deep Learning Neural Network</h3>
+                            <p>AlphaFold's neural network, trained on thousands of known protein structures, predicts the distances between amino acids and the angles of bonds. It uses attention mechanisms to understand how different parts of the sequence relate to each other.</p>
+                        </div>
+                    </div>
+
+                    <div class="step fade-in-up">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>Structure Generation</h3>
+                            <p>The network iteratively refines its prediction, generating a 3D structure that satisfies physical and chemical constraints. It outputs not just one structure, but multiple predictions with confidence scores.</p>
+                        </div>
+                    </div>
+
+                    <div class="step fade-in-up">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <h3>Output: 3D Protein Structure</h3>
+                            <p>The final output is a detailed 3D model showing the exact position of every atom in the protein. This structure reveals functional sites, binding pockets, and how the protein might interact with other molecules.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="impact-statement fade-in-up">
+                    <h3>The Impact</h3>
+                    <p>What once took months or years of experimental work can now be predicted in minutes to hours. AlphaFold has made structure predictions for over 200 million proteins - essentially all catalogued proteins known to science. This represents a paradigm shift in biological research, democratizing access to protein structures and accelerating discovery across all fields of life science.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">
+                    Inspired by the groundbreaking work of DeepMind and the scientific community.
+                </p>
+                <p class="footer-credit">
+                    Source: <a href="https://twitter.com/demishassabis" target="_blank" rel="noopener noreferrer">@demishassabis</a>
+                </p>
+                <p class="footer-links">
+                    <a href="https://www.deepmind.com/research/highlighted-research/alphafold" target="_blank" rel="noopener noreferrer">AlphaFold Research</a>
+                    <span class="separator">•</span>
+                    <a href="https://alphafold.ebi.ac.uk/" target="_blank" rel="noopener noreferrer">AlphaFold Database</a>
+                    <span class="separator">•</span>
+                    <a href="https://github.com/serenakeyitan/alphafold-use-case-explorer" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </p>
+                <p class="footer-copyright">
+                    © 2024 AlphaFold Use Case Explorer | MIT License
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
